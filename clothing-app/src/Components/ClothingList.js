@@ -1,7 +1,7 @@
 import React from "react"
 import ClothingCard from "./ClothingCard"
 
-function clothingList(){
+function ClothingList(){
     return(
         <div></div>
     )
