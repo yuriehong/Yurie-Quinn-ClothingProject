@@ -1,10 +1,17 @@
-import React from "react"
+import React from "react";
+import { NavLink } from "react-router-dom"
 
-function NavBar(){
-    return(
-        <div></div>
-    )
+
+function NavBar({ onChangePage }) {
+    
+    return (
+        <nav>
+            <NavLink exact to="/">Home</NavLink>
+            <NavLink to="/ClothingList">Clothing List</NavLink>
+            <NavLink to="/OutfitList">My Created Outfits</NavLink>
+        </nav>
+    );
+
 }
 
-
-export default Navbar
+export default NavBar;
