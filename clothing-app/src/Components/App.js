@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './NavBar';
+import ClothingForm from './ClothingForm';
+import ClothingList from './ClothingList';
+import OutfitList from './OutfitList';
 
 function App() {
   return (
