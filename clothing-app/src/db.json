@@ -127,9 +127,8 @@
         "description": "Bootie 70s-inspired silhouette in Dune Suede from Dolce Vita",
         "frontImage": "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/DOLCEVITA-BOOTIES_CASTER-H20_DUNESUEDEH20-02_4_1024x1024.jpg?v=1626273608",
         "backImage": "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/DOLCEVITA-BOOTIES_CASTER-H20_DUNESUEDEH20-03_3_1024x1024.jpg?v=1626273625",
-        "event": "casual",
-        "category": "shoes"
-    },
+        "event": "casual"
+        "category" : "shoes"
     {"id" : 17,
         "name": "Noles Heels",
         "description": "Chunky heel with clear straps in Nude Crystal from Dolce Vita",
@@ -143,8 +142,8 @@
     "description": "White sneaker from Nike",
     "frontImage": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e4a3fabb-5cda-46cd-9a12-4f9cc3840ab5/air-force-1-07-womens-shoes-GCkPzr.png",
     "backImage": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d81dae0f-e39d-4c22-a2a1-ee4b8b82a839/air-force-1-07-womens-shoes-GCkPzr.png",
-    "event": "casual",
-    "category": "shoes"
+     "event": "casual",
+     "category": "shoes"
     },
     {"id" : 19,
         "name": "So Kate",
@@ -179,6 +178,7 @@
         "category": "accessories"
     },
     {"id" : 23,
+
         "name": "Woman's Square Sunglasses",
         "description": "Black sunglasses from Gucci",
         "frontImage": "https://images.bloomingdalesassets.com/is/image/BLM/?&$b=BLM/swatches/&hei=75&wid=186&cropN=0,0,3,1&resMode=sharp2&fmt=jpeg&qlt=100,0&layer=0&size=186,75&anchor=0,0&layer=1&size=60,75&src=is{$b$9/optimized/11828429_fpx.tif}&anchor=0,0&posN=0.000000,0&layer=2&size=60,75&src=is{$b$8/optimized/11828428_fpx.tif}&anchor=0,0&posN=0.333333,0&layer=3&size=60,75&src=is{$b$7/optimized/11828427_fpx.tif}&anchor=0,0&posN=0.666667,0",
