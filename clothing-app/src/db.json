@@ -127,8 +127,9 @@
         "description": "Bootie 70s-inspired silhouette in Dune Suede from Dolce Vita",
         "frontImage": "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/DOLCEVITA-BOOTIES_CASTER-H20_DUNESUEDEH20-02_4_1024x1024.jpg?v=1626273608",
         "backImage": "https://cdn.shopify.com/s/files/1/0037/3807/5202/products/DOLCEVITA-BOOTIES_CASTER-H20_DUNESUEDEH20-03_3_1024x1024.jpg?v=1626273625",
-        "event": "casual"
+        "event": "casual",
         "category" : "shoes"
+}
     {"id" : 17,
         "name": "Noles Heels",
         "description": "Chunky heel with clear straps in Nude Crystal from Dolce Vita",
