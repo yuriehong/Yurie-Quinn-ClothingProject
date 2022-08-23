@@ -1,9 +1,12 @@
-import React from "react"
+import React from "react" 
 import OutfitCard from "./OutfitCard"
 
-function OutfitList(){
+function OutfitList({outfit}){
     return(
-        <div></div>
+        <div>
+            {outfit}
+
+        </div>
     )
 }
 
