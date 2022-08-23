@@ -17,6 +17,9 @@ function App() {
         <div>
             <NavBar />
             <Switch>
+                <Route path="/ClothingForm">
+                    <ClothingForm />
+                </Route>
                 <Route path="/OutfitList">
                     <OutfitList />
                 </Route>
