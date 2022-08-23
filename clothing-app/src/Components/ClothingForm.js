@@ -31,6 +31,10 @@ function ClothingForm(){
     .then(res => res.json())
     .then(data => console.log(data))
 
+    
+    return(
+        <div></div>
+    )
 }
 
   return (

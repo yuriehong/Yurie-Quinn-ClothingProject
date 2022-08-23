@@ -1,18 +1,10 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import ClothingCard from "./ClothingCard"
 
-function ClothingList(){
-    const [clothes, setClothes] = useState([])
-
-    useEffect(() => {
-      fetch("http://localhost:8004/clothes")
-      .then(res => res.json())
-      .then(clothingData => setClothes(clothingData))
-    }, [])
-
-
+function ClothingList({clothes, addToOutfit}){
+    
     const clothesToDisplay = clothes.map(clothingItem =>{
-        return <ClothingCard clothingItem={clothingItem} key={clothingItem.id}/>
+        return <ClothingCard clothingItem={clothingItem} key={clothingItem.id} addToOutfit = {addToOutfit}/>
     })
 
     return(

@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  background-color: cornsilk;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.25rem;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: firebrick;
+  border-bottom: 2px solid firebrick;
+  transition: 0.1s;
+}
+
+nav a:hover,
+nav a:active {
+  color: pink;
+  border-bottom: 2px solid pink;
+}
+
+.clothing img{
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 23rem;
+  height: 30rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+}
