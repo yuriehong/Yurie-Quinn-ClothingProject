@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 
@@ -10,10 +10,11 @@ import Home from "./Home";
 
 function App() {
   const [page, setPage] = useState("/")
+ 
+
     
     return (
         <div>
-            <h1> Clothing App </h1>
             <NavBar />
             <Switch>
                 <Route path="/OutfitList">
