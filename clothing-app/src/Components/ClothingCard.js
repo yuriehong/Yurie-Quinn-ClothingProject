@@ -1,11 +1,17 @@
-import React from "react"
+import React, {useState} from "react"
 
-function ClothingCard(){
+function ClothingCard({clothingItem}){
+    const [showFront, setShowFront] = useState(true)
+
+    function imageToggle(){
+        setShowFront(showFront => !showFront)
+    }
+
     return(
         <div>
-            <image>Image</image>
-            <h2>Name</h2>
-            <p>Description</p>
+            <img onClick={() => imageToggle()} src={showFront ? clothingItem.frontImage : clothingItem.backImage}/>
+            <h2>{clothingItem.name}</h2>
+            <p>{clothingItem.description}</p>
         </div>
     )
 }
