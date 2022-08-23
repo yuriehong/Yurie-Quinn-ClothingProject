@@ -13,6 +13,7 @@ function App() {
     
     return (
         <div>
+            <h1> Clothing App </h1>
             <NavBar />
             <Switch>
                 <Route path="/OutfitList">
