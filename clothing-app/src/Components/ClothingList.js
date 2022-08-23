@@ -10,8 +10,15 @@ function ClothingList(){
       .then(clothingData => setClothes(clothingData))
     }, [])
 
+
+    const clothesToDisplay = clothes.map(clothingItem =>{
+        return <ClothingCard clothingItem={clothingItem} key={clothingItem.id}/>
+    })
+
     return(
-        <div>hey</div>
+        <div>
+            {clothesToDisplay}
+        </div>
     )
 }
 
