@@ -17,8 +17,12 @@ function App() {
         <div>
             <NavBar />
             <Switch>
+
+                <Route exact path="/ClothingForm" component={ClothingForm}>
+                </Route>
+
                 <Route exact path="/OutfitList" component = {OutfitList}>
-            
+           
                 </Route>
                 <Route exact path="/ClothingList" component = {ClothingContainer}>
         
