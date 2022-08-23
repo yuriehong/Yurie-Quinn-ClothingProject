@@ -1,8 +1,8 @@
 import React from "react"
 
-function OutfitCard(){
+function OutfitCard({outfit}){
     return(
-        <div></div>
+        <div>{outfit}</div>
     )
 }
 
