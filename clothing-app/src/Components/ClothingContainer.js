@@ -1,8 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, createContext, useContext} from "react";
 import ClothingList from "./ClothingList";
 import OutfitList from "./OutfitList";
 
+const outfitsContext= createContext([]);
+
 function ClothingContainer(){
+    let context = useContext(outfitsContext);
+
     const [clothes, setClothes] = useState([])
     const [outfit, setOutfit] = useState([])
     const [outfits, setOutfits] = useState([])
@@ -16,10 +20,12 @@ function ClothingContainer(){
 
     function handleClick(){
         console.log("complete outfit")
-        
         setOutfits([...outfits,outfit]);
-        
         setOutfit([]);
+        <outfitsContext.Provider value={context}>
+                        <OutfitList />
+            </outfitsContext.Provider>;
+        
     }
     console.log(outfits);
     function addToOutfit(item){
@@ -29,9 +35,13 @@ function ClothingContainer(){
     }
     return (
         <div>
+        <div className = "closet">
             <h2>Closet Items</h2>
             <button onClick = {handleClick}>Complete Outfit</button>
+            </div>
             <ClothingList clothes = {clothes} addToOutfit = {addToOutfit}/>
+            
+        
         </div>
     )
 }

@@ -8,7 +8,7 @@ function ClothingList({clothes, addToOutfit}){
     })
 
     return(
-        <div>
+        <div className = "clothingList">
             {clothesToDisplay}
         </div>
     )

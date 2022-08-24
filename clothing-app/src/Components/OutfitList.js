@@ -1,10 +1,17 @@
-import React from "react" 
+import React, {useContext} from "react" 
 import OutfitCard from "./OutfitCard"
 
-function OutfitList({outfit}){
+function OutfitList({outfits}){
+    console.log({outfits})
+    let context=useContext(outfitsContext);
+    
+    const outfitsToDisplay = context.map((fit)=>{
+        return <OutfitCard outfit = {fit} key = {fit.id}/>
+    })
     return(
         <div>
-            {outfit}
+            <h2> Outfits </h2>
+            {outfitsToDisplay}
 
         </div>
     )

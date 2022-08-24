@@ -75,7 +75,7 @@
     {
       "id": 9,
       "name": "Natalie Tank",
-      "description": "White square neck bustier sweater tank from Aritzia.",
+      "description": "White bustier sweater tank from Aritzia.",
       "frontImage": "https://aritzia.scene7.com/is/image/Aritzia/large/s22_04_a03_90523_11420_off_a.jpg",
       "backImage": "https://aritzia.scene7.com/is/image/Aritzia/large/s22_04_a03_90523_11420_off_a.jpg",
       "event": "casual",
@@ -93,7 +93,7 @@
     {
       "id": 11,
       "name": "Effortless Pant",
-      "description": "White tailored-yet-relaxed high-rise pants with front knife pleats, easy drape, and a long, wide leg from Aritzia.",
+      "description": "White Aritzia tailored high-rise pants.",
       "frontImage": "https://aritzia.scene7.com/is/image/Aritzia/large/f22_04_a06_77775_11420_off_a.jpg",
       "backImage": "https://aritzia.scene7.com/is/image/Aritzia/large/f22_04_a06_77775_11420_off_b.jpg",
       "event": "formal",
@@ -102,7 +102,7 @@
     {
       "id": 12,
       "name": "Cargo Pant",
-      "description": "Black high-rise utility cargo pants with a removable webbing belt from Aritzia. They're made from structured, workwear-inspired cotton twill.",
+      "description": "Black Aritzia high-rise utility cargo pants.",
       "frontImage": "https://aritzia.scene7.com/is/image/Aritzia/large/f22_03_a06_94960_13317_off_a.jpg",
       "backImage": "https://aritzia.scene7.com/is/image/Aritzia/large/f22_03_a06_94960_13317_off_b.jpg",
       "event": "casual",
@@ -210,7 +210,7 @@
     {
       "id": 24,
       "name": "Graduated Link Necklace",
-      "description": "Graduated link necklace in 18k rose gold with pave diamonds from Tiffany",
+      "description": "Link necklace in 18k rose gold with pave diamonds from Tiffany",
       "frontImage": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweargraduated-link-necklace-68692490_1016438_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
       "backImage": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweargraduated-link-necklace-68692490_1016437_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
       "event": "formal",

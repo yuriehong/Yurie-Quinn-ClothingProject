@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext, createContext} from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 
@@ -8,6 +8,7 @@ import ClothingForm from './ClothingForm';
 import ClothingList from './ClothingList';
 import OutfitList from './OutfitList';
 import Home from "./Home";
+
 
 function App() {
 
@@ -21,12 +22,15 @@ function App() {
                 <Route exact path="/ClothingForm" component={ClothingForm}>
                 </Route>
 
+                
                 <Route exact path="/OutfitList" component = {OutfitList}>
+                    
+                </Route>
+                
            
-                </Route>
                 <Route exact path="/ClothingList" component = {ClothingContainer}>
-        
                 </Route>
+
                 <Route exact path="/" component = {Home}>
              
                 </Route>
