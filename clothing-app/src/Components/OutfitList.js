@@ -1,11 +1,13 @@
 import React, {useContext} from "react" 
 import OutfitCard from "./OutfitCard"
+import { OutfitContext } from "../Context/OutfitProvider";
 
-function OutfitList({outfits}){
-    console.log({outfits})
-    let context=useContext(outfitsContext);
+function OutfitList(){
     
-    const outfitsToDisplay = context.map((fit)=>{
+    let [outfits, setOutfits] = useContext(OutfitContext);
+    console.log(outfits, setOutfits)
+    
+    const outfitsToDisplay = outfits.map((fit)=>{
         return <OutfitCard outfit = {fit} key = {fit.id}/>
     })
     return(

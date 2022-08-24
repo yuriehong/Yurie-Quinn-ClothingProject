@@ -1,15 +1,15 @@
 import React, {useState, useEffect, createContext, useContext} from "react";
 import ClothingList from "./ClothingList";
 import OutfitList from "./OutfitList";
+import { OutfitContext } from "../Context/OutfitProvider";
 
-export const outfitsContext= createContext([]);
 
 function ClothingContainer(){
-    let context = useContext(outfitsContext);
+    let [outfits, setOutfits] = useContext(OutfitContext);
+    console.log(outfits, setOutfits)
 
     const [clothes, setClothes] = useState([])
     const [outfit, setOutfit] = useState([])
-    const [outfits, setOutfits] = useState([])
     const [event, setEvent] = useState("All")
 
 
@@ -23,9 +23,6 @@ function ClothingContainer(){
         console.log("complete outfit")
         setOutfits([...outfits,outfit]);
         setOutfit([]);
-        <outfitsContext.Provider value={context}>
-                        <OutfitList />
-            </outfitsContext.Provider>;
         
     }
     console.log(outfits);
