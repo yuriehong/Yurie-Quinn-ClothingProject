@@ -6,7 +6,6 @@ import { OutfitContext } from "../Context/OutfitProvider";
 
 function ClothingContainer(){
     let [outfits, setOutfits] = useContext(OutfitContext);
-    console.log(outfits, setOutfits)
 
     const [clothes, setClothes] = useState([])
     const [outfit, setOutfit] = useState([])
@@ -26,11 +25,9 @@ function ClothingContainer(){
         setOutfit([]);
         
     }
-    console.log(outfits);
+    
     function addToOutfit(item){
-        //console.log(item)
         setOutfit([...outfit,item])
-        console.log(outfit)
     }
 
     function handleChange(event){
@@ -47,11 +44,18 @@ function ClothingContainer(){
      else return (item.category === category.toLowerCase())
     })
 
+    function onDeleteItem(id){
+        let filteredItems = clothes.filter(item => {
+            return item.id !== id
+        })
+        setClothes(filteredItems)
+    }
+
 
     return (
         <div>
         <div className = "closet">
-            <h2>Closet Items</h2>
+            <h2>Choose Your Pieces!</h2>
             <button onClick = {handleClick}>Complete Outfit</button>
             <br/>
             <select className="select" value={event} onChange={(e) => handleChange(e.target.value)}>
@@ -70,7 +74,7 @@ function ClothingContainer(){
             <option value="Accessories">Accesories</option>
           </select>
             </div>
-            <ClothingList clothes = {clothesToDisplay} addToOutfit = {addToOutfit}/>
+            <ClothingList clothes = {clothesToDisplay} addToOutfit = {addToOutfit} onDeleteItem={onDeleteItem}/>
             
         
         </div>

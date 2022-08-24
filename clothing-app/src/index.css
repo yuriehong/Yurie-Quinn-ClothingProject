@@ -82,7 +82,7 @@ nav a:active {
   height: 50rem;
   display: inline-block;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #e04b52
+  box-shadow: 3px 4px #f92f8a
 }
 
 button {
@@ -95,6 +95,7 @@ button {
   color: rgb(22, 18, 18);
   font-size: 18px;
   justify-self: center;
+  margin: 4px;
 }
 
 button:hover {

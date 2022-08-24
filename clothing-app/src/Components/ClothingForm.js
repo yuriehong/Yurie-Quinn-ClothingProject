@@ -29,12 +29,15 @@ function ClothingForm(){
       body : JSON.stringify(newClothingItem)
     })
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => data)
 
-    
-    return(
-        <div></div>
-    )
+    setName("")
+    setDescription("")
+    setFrontImage("")
+    setBackImage("")
+    setEvent("Casual")
+    setCategory("")
+
 }
 
   return (
