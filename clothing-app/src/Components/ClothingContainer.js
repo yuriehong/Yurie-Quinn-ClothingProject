@@ -11,6 +11,7 @@ function ClothingContainer(){
     const [clothes, setClothes] = useState([])
     const [outfit, setOutfit] = useState([])
     const [event, setEvent] = useState("All")
+    const [category, setCategory] = useState("All")
 
 
     useEffect(() => {
@@ -41,6 +42,10 @@ function ClothingContainer(){
      else return (item.event === event.toLowerCase())
     })
 
+    clothesToDisplay = clothes.filter(item => {
+        if (category === "All") {return true}
+     else return (item.category === category.toLowerCase())
+    })
 
 
     return (
@@ -55,6 +60,15 @@ function ClothingContainer(){
             <option value="SemiFormal">SemiFormal</option>
             <option value="Formal">Formal</option>
             </select>
+            <br/>
+            <select className="select" value={category} onChange={(e) => setCategory(e.target.value)}>
+            <option value="All">Category</option>
+            <option value="Dress">Dress</option>
+            <option value="Top">Top</option>
+            <option value="Bottom">Bottom</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Accessories">Accesories</option>
+          </select>
             </div>
             <ClothingList clothes = {clothesToDisplay} addToOutfit = {addToOutfit}/>
             

@@ -22,6 +22,9 @@ function App() {
 
                 <Route exact path="/ClothingForm" component={ClothingForm}>
                 </Route>
+                <Route exact path="/" component = {Home}>
+             
+                </Route>
 
                 <Route exact path="/" component = {Home}>
                 </Route>
@@ -37,7 +40,8 @@ function App() {
                     <ClothingContainer />
                 </Route>
                 </OutfitProvider>
-
+                
+                
             </Switch>
         </div>
     );
