@@ -4,8 +4,10 @@ function Home() {
     return (
         <div id="home">
             <h1 style={{ color: "Pink" }}>
-                Clothing App
+                Curate Your Closet!
             </h1>
+            <p>Select different pieces and curate chic outfits with ease</p>
+            <img id="home_image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/simple-outfits-1587568133.jpg"></img>
         </div>
     );
 }

@@ -2,7 +2,7 @@ import React, {useState, useEffect, createContext, useContext} from "react";
 import ClothingList from "./ClothingList";
 import OutfitList from "./OutfitList";
 
-const outfitsContext= createContext([]);
+export const outfitsContext= createContext([]);
 
 function ClothingContainer(){
     let context = useContext(outfitsContext);
@@ -10,6 +10,7 @@ function ClothingContainer(){
     const [clothes, setClothes] = useState([])
     const [outfit, setOutfit] = useState([])
     const [outfits, setOutfits] = useState([])
+    const [event, setEvent] = useState("All")
 
 
     useEffect(() => {
@@ -33,13 +34,32 @@ function ClothingContainer(){
         setOutfit([...outfit,item])
         console.log(outfit)
     }
+
+    function handleChange(event){
+        setEvent(event)
+    }
+
+    let clothesToDisplay = clothes.filter(item => {
+        if (event === "All") {return true}
+     else return (item.event === event.toLowerCase())
+    })
+
+
+
     return (
         <div>
         <div className = "closet">
             <h2>Closet Items</h2>
             <button onClick = {handleClick}>Complete Outfit</button>
+            <br/>
+            <select className="select" value={event} onChange={(e) => handleChange(e.target.value)}>
+            <option value="All">Event Type</option>
+            <option value="Casual">Casual</option>
+            <option value="SemiFormal">SemiFormal</option>
+            <option value="Formal">Formal</option>
+            </select>
             </div>
-            <ClothingList clothes = {clothes} addToOutfit = {addToOutfit}/>
+            <ClothingList clothes = {clothesToDisplay} addToOutfit = {addToOutfit}/>
             
         
         </div>
