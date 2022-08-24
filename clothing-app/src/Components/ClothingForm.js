@@ -38,7 +38,7 @@ function ClothingForm(){
 }
 
   return (
-    <div>
+    <div className="form">
       <form onSubmit={(e) => handleClothingForm(e)}>
         <h3>Add a Clothing Item!</h3>
         <input
@@ -46,8 +46,8 @@ function ClothingForm(){
           onChange={(e) => setName(e.target.value)}
           type="text"
           name="name"
-          placeholder="Item name..."
-          className="input-text"
+          placeholder="Item name"
+        //   className="input-text"
         />
         <br />
         <input
@@ -55,35 +55,35 @@ function ClothingForm(){
           onChange={(e) => setDescription(e.target.value)}
           type="text"
           name="name"
-          placeholder="Item description..."
-          className="input-text"
+          placeholder="Item description"
+        //   className="input-text"
         />
         <br />
         <input
           value={frontImage}
           onChange={(e) => setFrontImage(e.target.value)}
-          type="text"
+          type="textarea"
           name="name"
-          placeholder="Enter a clothing item's front image Url"
+          placeholder="Front Image Url"
           className="input-text"
         />
         <br />
         <input
           value={backImage}
           onChange={(e) => setBackImage(e.target.value)}
-          type="text"
+          type="textarea"
           name="name"
-          placeholder="Enter a clothing item's back image Url"
+          placeholder="Back Image Url"
           className="input-text"
         />
         <br />
-        <select value={event} onChange={(e) => setEvent(e.target.value)}>
+        <select className="select" value={event} onChange={(e) => setEvent(e.target.value)}>
             <option value="Casual">Casual</option>
             <option value="SemiFormal">SemiFormal</option>
             <option value="Formal">Formal</option>
           </select>
         <br />
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select className="select" value={category} onChange={(e) => setCategory(e.target.value)}>
             <option value="Dress">Dress</option>
             <option value="Top">Top</option>
             <option value="Bottom">Bottom</option>

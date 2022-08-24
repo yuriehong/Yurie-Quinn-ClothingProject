@@ -7,8 +7,8 @@ function NavBar() {
     return (
         <nav>
             <NavLink exact to="/">Home</NavLink>
-            <NavLink exact to="/ClothingForm">ClothingForm</NavLink>
-            <NavLink exact to="/ClothingList">Clothing List</NavLink>
+            <NavLink exact to="/ClothingForm">Add Clothing</NavLink>
+            <NavLink exact to="/ClothingList">My Closet</NavLink>
             <NavLink exact to="/OutfitList">My Created Outfits</NavLink>
         </nav>
     );

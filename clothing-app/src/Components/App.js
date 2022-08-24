@@ -8,6 +8,7 @@ import ClothingForm from './ClothingForm';
 import ClothingList from './ClothingList';
 import OutfitList from './OutfitList';
 import Home from "./Home";
+import { OutfitContext, OutfitProvider } from "../Context/OutfitProvider";
 
 
 function App() {
@@ -22,14 +23,17 @@ function App() {
                 <Route exact path="/ClothingForm" component={ClothingForm}>
                 </Route>
 
-                
-                <Route exact path="/OutfitList" component = {OutfitList}>
-                    
+                <OutfitProvider>
+                <Route exact path="/OutfitList">
+                   <OutfitList /> 
                 </Route>
+                
                 
            
-                <Route exact path="/ClothingList" component = {ClothingContainer}>
+                <Route exact path="/ClothingList" >
+                    <ClothingContainer />
                 </Route>
+                </OutfitProvider>
 
                 <Route exact path="/" component = {Home}>
              
