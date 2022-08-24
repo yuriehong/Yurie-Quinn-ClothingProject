@@ -10,6 +10,7 @@ function ClothingContainer(){
 
     const [clothes, setClothes] = useState([])
     const [outfit, setOutfit] = useState([])
+    const [filterBy, setFilterBy] = useState("")
     const [event, setEvent] = useState("All")
     const [category, setCategory] = useState("All")
 
@@ -35,14 +36,12 @@ function ClothingContainer(){
 
     function handleChange(event){
         setEvent(event)
+       
     }
 
     let clothesToDisplay = clothes.filter(item => {
         if (event === "All") {return true}
-     else return (item.event === event.toLowerCase())
-    })
-
-    clothesToDisplay = clothes.filter(item => {
+        else return (item.event === event.toLowerCase())}).filter(item => {
         if (category === "All") {return true}
      else return (item.category === category.toLowerCase())
     })
@@ -61,7 +60,7 @@ function ClothingContainer(){
             <option value="Formal">Formal</option>
             </select>
             <br/>
-            <select className="select" value={category} onChange={(e) => setCategory(e.target.value)}>
+            <select className="select2" value={category} onChange={(e) => setCategory(e.target.value)}>
             <option value="All">Category</option>
             <option value="Dress">Dress</option>
             <option value="Top">Top</option>
