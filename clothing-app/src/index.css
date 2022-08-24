@@ -13,7 +13,7 @@ code {
 }
 
 nav {
-  background-color: cornsilk;
+  background-color: rgb(233, 209, 245);
 }
 
 nav a {
@@ -22,15 +22,15 @@ nav a {
   margin: 1rem;
   text-decoration: none;
   font-size: 1.2em;
-  color: firebrick;
-  border-bottom: 2px solid firebrick;
+  color: rgb(196, 64, 210);
+  border-bottom: 2px solid rgb(174, 18, 191);
   transition: 0.1s;
 }
 
 nav a:hover,
 nav a:active {
-  color: pink;
-  border-bottom: 2px solid pink;
+  color: rgb(235, 63, 146);
+  border-bottom: 2px solid rgb(235, 63, 146);
 }
 
 .clothingList {
@@ -103,3 +103,64 @@ button:hover {
   color: #cdbabb;
 }
 
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px, black;
+  background:rgb(244, 194, 217);
+  padding: 1.75rem;
+}
+
+input,
+select {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  /* border: none; */
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  /* border: 2px solid var(--color); */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 2px solid var(--primary);
+}
+
+.form button[type="submit"] {
+  width: 50%;
+  cursor: pointer;
+}
+
+.form h3 {
+  font-size: 50px;
+  color: white;
+}
+input.input-text {
+  height: 40px;
+  width: 200 px;
+}
+
+select.select {
+  width: 200 px;
+}
+
+#home {
+text-align: center;
+}
+
+#home_image{
+  height: auto;
+  width: 800px;
+}
+
+.form_image{
+  height: auto;
+  width: 150px;
+}
