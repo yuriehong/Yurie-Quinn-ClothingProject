@@ -18,7 +18,6 @@ function OutfitCard({outfit}){
     })
     return(
         <div className = "fit">
-            <h3>Created Outfit</h3>
             {outfitToDisplay}
             </div>
     )
