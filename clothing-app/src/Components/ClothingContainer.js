@@ -54,8 +54,9 @@ function ClothingContainer(){
     return (
         <div>
         <div className = "closet">
-            <h2>Choose Your Pieces!</h2>
-            <button onClick = {handleClick}>Complete Outfit</button>
+            <h2 id="pieces_title">Choose Your Pieces!</h2>
+            <p id="fit_directions">Select pieces to create your outfit. Click the Complete Outfit button to finish your fit. </p>
+            <button id="complete_outfit" onClick = {handleClick}>Complete Outfit</button>
             <br/>
             <select className="select" value={event} onChange={(e) => handleChange(e.target.value)}>
             <option value="All">Event Type</option>
@@ -63,7 +64,7 @@ function ClothingContainer(){
             <option value="SemiFormal">SemiFormal</option>
             <option value="Formal">Formal</option>
             </select>
-            <br/>
+           
             <select className="select2" value={category} onChange={(e) => setCategory(e.target.value)}>
             <option value="All">Category</option>
             <option value="Dress">Dress</option>

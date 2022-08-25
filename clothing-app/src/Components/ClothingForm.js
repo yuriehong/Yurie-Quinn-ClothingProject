@@ -5,7 +5,7 @@ function ClothingForm(){
     const [description, setDescription] = useState("")
     const [frontImage, setFrontImage] = useState("")
     const [backImage, setBackImage] = useState("")
-    const [event, setEvent] = useState("Casual")
+    const [event, setEvent] = useState("All")
     const [category, setCategory] = useState("")
 
 
@@ -35,7 +35,7 @@ function ClothingForm(){
     setDescription("")
     setFrontImage("")
     setBackImage("")
-    setEvent("Casual")
+    setEvent("All")
     setCategory("")
 
 }
@@ -43,13 +43,13 @@ function ClothingForm(){
   return (
     <div className="form">
       <form onSubmit={(e) => handleClothingForm(e)}>
-        <h3>Add a Clothing Item!</h3>
+        <h3>Add a New Piece!</h3>
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
           type="text"
           name="name"
-          placeholder="Item name"
+          placeholder="Item Name"
             id="name"
         />
         <br />
@@ -58,7 +58,7 @@ function ClothingForm(){
           onChange={(e) => setDescription(e.target.value)}
           type="text"
           name="name"
-          placeholder="Item description"
+          placeholder="Item Description"
           id="description"
         />
         <br />
@@ -81,17 +81,19 @@ function ClothingForm(){
         />
         <br />
         <select id="selectform" value={event} onChange={(e) => setEvent(e.target.value)}>
+            <option value="All">Event Type</option>
             <option value="Casual">Casual</option>
             <option value="SemiFormal">SemiFormal</option>
             <option value="Formal">Formal</option>
           </select>
         <br />
         <select id="selectform" value={category} onChange={(e) => setCategory(e.target.value)}>
+            <option value="All">Category</option>
             <option value="Dress">Dress</option>
             <option value="Top">Top</option>
             <option value="Bottom">Bottom</option>
             <option value="Shoes">Shoes</option>
-            <option value="Accessories">Accesories</option>
+            <option value="Accessories">Accessories</option>
           </select>
           <br/>
         <input
