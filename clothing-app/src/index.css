@@ -82,7 +82,7 @@ nav a:active {
   height: 50rem;
   display: inline-block;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #e04b52
+  box-shadow: 3px 4px #f92f8a
 }
 
 button {
@@ -95,6 +95,7 @@ button {
   color: rgb(22, 18, 18);
   font-size: 18px;
   justify-self: center;
+  margin: 4px;
 }
 
 button:hover {
@@ -109,9 +110,10 @@ button:hover {
   flex-direction: column;
   width: 500px;
   margin: 0 auto;
-  border: 1px, black;
+  border: 1px, rgb(254, 254, 254);
   background:rgb(244, 194, 217);
-  padding: 1.75rem;
+  padding: 1.50rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 input,
@@ -119,10 +121,14 @@ select {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  /* border: none; */
+  border: 6px, solid, white;
+  outline: 6px, solid, white;
   font-size: 1.25rem;
   font-weight: bold;
   transition: all 0.3s;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(245, 226, 235)
   /* border: 2px solid var(--color); */
 }
 
@@ -139,16 +145,28 @@ select:focus {
 }
 
 .form h3 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
 }
 input.input-text {
-  height: 40px;
+  height: 35px;
   width: 200 px;
+  border: white;
+  color: white;
+  text-align: center;
 }
 
-select.select {
-  width: 200 px;
+#name, #description {
+  border: white;
+  color: white;
+  text-align: center;
+}
+
+#selectform {
+  width: 300 px;
+  border: white;
+  color: rgb(121, 120, 120);
+  text-align: center;
 }
 
 #home {
@@ -158,6 +176,12 @@ text-align: center;
 #home_image{
   height: auto;
   width: 800px;
+}
+
+.submit{
+  color: rgb(121, 120, 120);
+  border: white;
+  text-align: center;
 }
 
 .form_image{

@@ -6,7 +6,7 @@ function Home() {
             <h1 style={{ color: "Pink" }}>
                 Curate Your Closet!
             </h1>
-            <p>Select different pieces and curate chic outfits with ease</p>
+            <p style={{ color: "#f92f8a" }}>Curate chic outfits with ease by selecting or adding gorgeous pieces from your closet!</p>
             <img id="home_image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/simple-outfits-1587568133.jpg"></img>
         </div>
     );

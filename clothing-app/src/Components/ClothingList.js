@@ -1,10 +1,10 @@
 import React from "react"
 import ClothingCard from "./ClothingCard"
 
-function ClothingList({clothes, addToOutfit}){
+function ClothingList({clothes, addToOutfit, onDeleteItem}){
     
     const clothesToDisplay = clothes.map(clothingItem =>{
-        return <ClothingCard clothingItem={clothingItem} key={clothingItem.id} addToOutfit = {addToOutfit}/>
+        return <ClothingCard clothingItem={clothingItem} key={clothingItem.id} onDeleteItem={onDeleteItem} addToOutfit = {addToOutfit}/>
     })
 
     return(
