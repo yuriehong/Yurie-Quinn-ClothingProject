@@ -68,8 +68,8 @@ nav a:active {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
-  width: 10rem;
-  height: 15rem;
+  width: 8rem;
+  height: 10rem;
   display: inline-block;
   margin: 1rem 2rem;
 }
@@ -82,7 +82,7 @@ nav a:active {
   height: 50rem;
   display: inline-block;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #f92f8a
+
 }
 
 button {
@@ -189,3 +189,16 @@ text-align: center;
   width: 150px;
 }
 
+.outfitTitle{
+    font-size: 50px;
+    color: rgb(154, 154, 204);
+    text-align: center;
+  }
+
+.outfits{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  }

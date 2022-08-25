@@ -11,9 +11,12 @@ function OutfitList(){
         return <OutfitCard outfit = {fit} key = {fit.id}/>
     })
     return(
+        
         <div>
-            <h2> Outfits </h2>
+            <h2 className ="outfitTitle"> Outfits </h2>
+           <div className = "outfits">
             {outfitsToDisplay}
+            </div>
 
         </div>
     )
