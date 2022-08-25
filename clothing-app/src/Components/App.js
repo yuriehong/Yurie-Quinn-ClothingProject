@@ -26,6 +26,9 @@ function App() {
              
                 </Route>
 
+                <Route exact path="/" component = {Home}>
+                </Route>
+
                 <OutfitProvider>
                 <Route exact path="/OutfitList">
                    <OutfitList /> 
@@ -37,7 +40,7 @@ function App() {
                     <ClothingContainer />
                 </Route>
                 </OutfitProvider>
-
+                
                 
             </Switch>
         </div>
