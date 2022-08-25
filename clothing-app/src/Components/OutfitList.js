@@ -14,7 +14,7 @@ function OutfitList(){
         
         <div>
             <h2 className ="outfitTitle"> Outfits </h2>
-           <div className = "outfits">
+            <div className = "outfits">
             {outfitsToDisplay}
             </div>
 

@@ -60,6 +60,11 @@ nav a:active {
   margin: 1rem 2rem;
 }
 
+#complete_outfit{
+  position: fixed;
+  left: 88%;
+}
+
 .closet {
   text-align: center;
 }
@@ -74,16 +79,48 @@ nav a:active {
   margin: 1rem 2rem;
 }
 
+.outfitClothe {
+  display: inline-block;
+}
+
 .fit {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
-  width: 50rem;
-  height: 50rem;
-  display: inline-block;
+  width: auto;
+  height: auto;
+  display: flex;
   margin: 1rem 2rem;
 
 }
+
+.select{
+  margin-right: 8px;
+}
+
+.select, .select2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-weight: normal;
+  border: white;
+}
+
+#pieces_title{
+  color:rgb(127, 50, 140);
+  font-size:xx-large;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+#fit_directions{
+  color:rgb(127, 50, 140);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
 
 button {
   position: relative;
