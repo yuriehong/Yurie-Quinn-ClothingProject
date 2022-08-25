@@ -50,7 +50,7 @@ function ClothingForm(){
           type="text"
           name="name"
           placeholder="Item name"
-        //   className="input-text"
+            id="name"
         />
         <br />
         <input
@@ -59,7 +59,7 @@ function ClothingForm(){
           type="text"
           name="name"
           placeholder="Item description"
-        //   className="input-text"
+          id="description"
         />
         <br />
         <input
@@ -80,13 +80,13 @@ function ClothingForm(){
           className="input-text"
         />
         <br />
-        <select className="select" value={event} onChange={(e) => setEvent(e.target.value)}>
+        <select id="selectform" value={event} onChange={(e) => setEvent(e.target.value)}>
             <option value="Casual">Casual</option>
             <option value="SemiFormal">SemiFormal</option>
             <option value="Formal">Formal</option>
           </select>
         <br />
-        <select className="select" value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select id="selectform" value={category} onChange={(e) => setCategory(e.target.value)}>
             <option value="Dress">Dress</option>
             <option value="Top">Top</option>
             <option value="Bottom">Bottom</option>
@@ -97,7 +97,7 @@ function ClothingForm(){
         <input
           type="submit"
           name="submit"
-          value="Create New Clothing Item"
+          value="Add Clothing Item"
           className="submit"
         />
       </form>
