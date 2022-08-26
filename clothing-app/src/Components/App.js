@@ -1,14 +1,13 @@
-import React, {useState, useEffect, useContext, createContext} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch} from "react-router-dom";
+import { Route, Switch} from "react-router-dom";
 
 import ClothingContainer from "./ClothingContainer";
 import NavBar from './NavBar';
 import ClothingForm from './ClothingForm';
-import ClothingList from './ClothingList';
 import OutfitList from './OutfitList';
 import Home from "./Home";
-import { OutfitContext, OutfitProvider } from "../Context/OutfitProvider";
+import { OutfitProvider } from "../Context/OutfitProvider";
 
 
 function App() {
@@ -22,9 +21,6 @@ function App() {
 
                 <Route exact path="/ClothingForm" component={ClothingForm}>
                 </Route>
-                <Route exact path="/" component = {Home}>
-             
-                </Route>
 
                 <Route exact path="/" component = {Home}>
                 </Route>
@@ -33,7 +29,6 @@ function App() {
                 <Route exact path="/OutfitList">
                    <OutfitList /> 
                 </Route>
-                
                 
            
                 <Route exact path="/ClothingList" >

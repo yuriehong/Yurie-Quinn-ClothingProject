@@ -7,8 +7,7 @@ function ClothingCard({clothingItem, addToOutfit, onDeleteItem}){
         setShowFront(showFront => !showFront)
     }
 
-    function handleClick(){
-        console.log(clothingItem);
+    function handleClick(e){
         addToOutfit(clothingItem);
     }
 
@@ -16,7 +15,6 @@ function ClothingCard({clothingItem, addToOutfit, onDeleteItem}){
         fetch(`http://localhost:8004/clothes/${clothingItem.id}`, {
             method : "DELETE"
         })
-
         onDeleteItem(clothingItem.id)
     }
 
@@ -26,7 +24,7 @@ function ClothingCard({clothingItem, addToOutfit, onDeleteItem}){
             <img onClick={() => imageToggle()} src={showFront ? clothingItem.frontImage : clothingItem.backImage}/>
             <h2>{clothingItem.name}</h2>
             <p>{clothingItem.description}</p>
-            <button onClick = {handleClick}>Add to Outfit</button>
+            <button onClick = {(e) => handleClick(e)}>Add to Outfit</button>
             <button onClick={handleDelete}>Delete Item</button>
         </div>
     )
