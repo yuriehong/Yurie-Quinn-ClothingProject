@@ -39,13 +39,11 @@ nav a:active {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
-
   height: auto;
 }
 
 .clothing img{
   text-align: center;
-   
   width: 10rem;
   height: 12rem;
   display: inline-grid;
@@ -91,7 +89,6 @@ nav a:active {
   height: auto;
   display: flex;
   margin: 1rem 2rem;
-
 }
 
 .select{
@@ -166,11 +163,9 @@ select {
   border-radius: 4px;
   font-family: 'Courier New', Courier, monospace;
   background-color: rgb(245, 226, 235)
-  /* border: 2px solid var(--color); */
 }
 
 input:focus,
-textarea:focus,
 select:focus {
   outline: none;
   border: 2px solid var(--primary);
@@ -189,13 +184,13 @@ input.input-text {
   height: 35px;
   width: 200 px;
   border: white;
-  color: white;
+  color: rgb(121, 120, 120);
   text-align: center;
 }
 
 #name, #description {
   border: white;
-  color: white;
+  color: rgb(121, 120, 120);
   text-align: center;
 }
 

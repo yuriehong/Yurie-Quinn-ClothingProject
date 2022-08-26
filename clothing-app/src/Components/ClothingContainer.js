@@ -1,6 +1,5 @@
 import React, {useState, useEffect, createContext, useContext} from "react";
 import ClothingList from "./ClothingList";
-import OutfitList from "./OutfitList";
 import { OutfitContext } from "../Context/OutfitProvider";
 
 
@@ -9,7 +8,6 @@ function ClothingContainer(){
 
     const [clothes, setClothes] = useState([])
     const [outfit, setOutfit] = useState([])
-    const [filterBy, setFilterBy] = useState("")
     const [event, setEvent] = useState("All")
     const [category, setCategory] = useState("All")
 
@@ -21,7 +19,6 @@ function ClothingContainer(){
     }, [])
 
     function handleClick(){
-        console.log("complete outfit")
         setOutfits([...outfits,outfit]);
         setOutfit([]);
         
@@ -29,11 +26,11 @@ function ClothingContainer(){
     
     function addToOutfit(item){
         setOutfit([...outfit,item])
+
     }
 
     function handleChange(event){
         setEvent(event)
-       
     }
 
     let clothesToDisplay = clothes.filter(item => {
@@ -71,7 +68,7 @@ function ClothingContainer(){
             <option value="Top">Top</option>
             <option value="Bottom">Bottom</option>
             <option value="Shoes">Shoes</option>
-            <option value="Accessories">Accesories</option>
+            <option value="Accessories">Accessories</option>
           </select>
             </div>
             <ClothingList clothes = {clothesToDisplay} addToOutfit = {addToOutfit} onDeleteItem={onDeleteItem}/>
