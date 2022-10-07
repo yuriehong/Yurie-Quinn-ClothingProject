@@ -10,15 +10,6 @@
       "category": "dress"
     },
     {
-      "id": 2,
-      "name": "Court dress",
-      "description": "Dusty pink sporty tennis mini dress from Aritzia.",
-      "frontImage": "https://aritzia.scene7.com/is/image/Aritzia/large/s22_03_a08_82170_2377_off_a.jpg",
-      "backImage": "https://aritzia.scene7.com/is/image/Aritzia/hi-res/s22_03_a08_82170_2377_off_c.jpg",
-      "event": "casual",
-      "category": "dress"
-    },
-    {
       "id": 3,
       "name": "Bow Dress",
       "description": "Strapless mini dress with a bow from Zara.",
@@ -233,6 +224,15 @@
       "event": "Casual",
       "category": "Shoes",
       "id": 26
+    },
+    {
+      "name": "Nike Dunks",
+      "description": "Pink Nike Dunk Lows",
+      "frontImage": "https://houseofheat.co/app/uploads/2021/08/nike-dunk-low-move-to-zero-dd1873-100-white-pink-release-date.jpg",
+      "backImage": "https://houseofheat.co/app/uploads/2021/08/nike-dunk-low-move-to-zero-dd1873-100-white-pink-release-date.jpg",
+      "event": "Casual",
+      "category": "Shoes",
+      "id": 27
     }
   ]
 }

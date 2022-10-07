@@ -15,7 +15,10 @@ code {
 nav {
   background-color: rgb(233, 209, 245);
 }
+.header{
+  background-color: rgb(233, 209, 245);
 
+}
 nav a {
   display: inline-block;
   padding: 0.25rem;
